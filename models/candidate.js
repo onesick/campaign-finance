@@ -1,17 +1,17 @@
 var candidates = [
-  "Hillary Clinton",
-  "Bernie Sanders",
-  "Martin O'Malley",
-  "Donald Trump",
-  "Ben Carson",
-  "Jeb Bush",
-  "Marco Rubio",
-  "Carly Fiorina",
-  "Ted Cruz",
-  "Rand Paul",
-  "Chris Christie",
-  "John Kasich",
-  "Mike Huckabee"
+  ["Hillary Clinton", "D"],
+  ["Bernie Sanders", "D"],
+  ["Martin O'Malley", "D"],
+  ["Donald Trump", "R"],
+  ["Ben Carson", "R"],
+  ["Jeb Bush", "R"],
+  ["Marco Rubio", "R"],
+  ["Carly Fiorina", "R"],
+  ["Ted Cruz", "R"],
+  ["Rand Paul", "R"],
+  ["Chris Christie", "R"],
+  ["John Kasich", "R"],
+  ["Mike Huckabee", "R"]
 ];
 
 function Candidate(){
