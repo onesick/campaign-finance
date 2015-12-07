@@ -6,9 +6,9 @@ var bodyParser = require('body-parser');
 var passport = require("passport");
 var flash = require("connect-flash");
 var hbs = require("hbs");
-var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
+var mongoose = require("mongoose");
 
 mongoose.connect('mongodb://localhost/local-authentication-with-passport');
 
