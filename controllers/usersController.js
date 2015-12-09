@@ -2,9 +2,7 @@ var passport = require("passport")
 
 // GET /signup
 function getSignup(request, response) {
-  response.render("signup.hbs"
-  // , { message: request.flash('signupMessage') }
-);
+  response.render("signup.hbs", { message: request.flash('signupMessage') });
 }
 
 // POST /signup
@@ -28,8 +26,8 @@ function getLogin(request, response) {
 function postLogin(request, response) {
   var loginProperty = passport.authenticate('local-login', {
     successRedirect : '/',
-    failureRedirect : '/login'
-    // failureFlash : true
+    failureRedirect : '/login',
+    failureFlash : true
   });
   return loginProperty(request, response);
 }
