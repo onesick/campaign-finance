@@ -1,15 +1,14 @@
 
 
 // GET /
-function home(req, res) {
-  res.render('index');
-}
-//
 function index(req, res) {
-  res.render('index');
+  res.render('./candidates/index');
 }
 
+function show(req,res) {
+  res.render('./candidates/show');
+}
 module.exports = {
-  home: home
-  index: index
+  index: index,
+  show: show
 };

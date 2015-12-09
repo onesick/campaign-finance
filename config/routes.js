@@ -6,7 +6,10 @@ var candidatesController = require('../controllers/candidatesController');
 
 
 router.route('/')
-  .get(candidatesController.home);
+  .get(candidatesController.index);
+
+router.route('/candidates/:id')
+  .get(candidatesController.show);
 
 
 module.exports = router;
