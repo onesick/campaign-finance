@@ -12,7 +12,7 @@ router.route('/candidates/:id')
   .get(candidatesController.show);
 
 router.route('/signup')
-  .get(usersController.getSignup);
+  .get(usersController.getSignup)
   .post(usersController.postSignup);
 
 router.route('/login')
