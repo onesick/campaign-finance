@@ -19,7 +19,9 @@ function postSignup(request, response) {
 
 // GET /login
 function getLogin(request, response) {
-  response.render('login.hbs', { message: request.flash('loginMessage') });
+  response.render('login.hbs'
+  // , { message: request.flash('loginMessage') }
+);
 }
 
 // POST /login

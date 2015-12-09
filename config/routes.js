@@ -13,9 +13,9 @@ router.route('/candidates/:id')
 
 router.route('/signup')
   .get(usersController.getSignup);
-  .post(usersController.postSignup);
+  // .post(usersController.postSignup);
 
-// router.route('/login')
-//   .get(usersController.getLogin);
+router.route('/login')
+  .get(usersController.getLogin);
 
 module.exports = router;
