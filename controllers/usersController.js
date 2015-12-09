@@ -28,8 +28,8 @@ function getLogin(request, response) {
 function postLogin(request, response) {
   var loginProperty = passport.authenticate('local-login', {
     successRedirect : '/',
-    failureRedirect : '/login',
-    failureFlash : true
+    failureRedirect : '/login'
+    // failureFlash : true
   });
   return loginProperty(request, response);
 }
