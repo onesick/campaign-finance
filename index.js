@@ -28,6 +28,9 @@ app.use(flash());
 require('./config/passport')(passport);
 
 
+var routes = require('./config/routes');
+app.use(routes);
+
 //port listening at local hosting 3000
 app.listen(3000, function(){
   console.log("app listening on port 3000");

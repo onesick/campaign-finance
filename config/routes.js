@@ -11,5 +11,7 @@ router.route('/')
 router.route('/candidates/:id')
   .get(candidatesController.show);
 
-
+router.route('/signup')
+  .get(usersController.getSignup);
+  
 module.exports = router;
