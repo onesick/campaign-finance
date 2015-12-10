@@ -1,24 +1,22 @@
-var candidates = [
-  ["Hillary Clinton", "D"],
-  ["Bernie Sanders", "D"],
-  ["Martin O'Malley", "D"],
-  ["Donald Trump", "R"],
-  ["Ben Carson", "R"],
-  ["Jeb Bush", "R"],
-  ["Marco Rubio", "R"],
-  ["Carly Fiorina", "R"],
-  ["Ted Cruz", "R"],
-  ["Rand Paul", "R"],
-  ["Chris Christie", "R"],
-  ["John Kasich", "R"],
-  ["Mike Huckabee", "R"]
-];
+<<<<<<< HEAD
+var env = require( "../env" );
+var request=require('request');
 
-function Candidate(){
-};
+// request('http://api.nytimes.com/svc/elections/us/v3/finances/2016/president/totals.json?api-key='+env.api_key,
+// function (error, response, body) {
+//   if (!error && response.statusCode == 200) {
+//     console.log(body); // Show the HTML for the Google homepage.
+//   }
+// })
 
-Candidate.all = function(){
-  return candidates;
-};
+var Candidate = function(info){
+  this.name = info.name;
+}
 
-module.exports = Candidate
+
+// var candidates = [];
+//
+// $.getJSON( url, function(data){
+//
+//   $.each(data, candidates.push(new Candidates(data.name)));
+// });

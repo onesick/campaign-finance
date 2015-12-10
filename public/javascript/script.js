@@ -9,8 +9,9 @@ $(document).ready(function() {
       $("#flag-2").hide();
   });
 
-  $(".faces").click(function() {
-    $(".financials").show("slow");
+  $(".faces img").click(function() {
+    $(".financials").show("slow")
+      console.log(this)
   });
 
   $("#button-1").click(function() {

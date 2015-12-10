@@ -1,6 +1,12 @@
-<!doctype html>
- <html>
-   <head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Campaign Finance</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/models/candidate.js"></script>
+    <script src="js/views/candidateView.js"></script>
+    <script src="js/script.js"></script>
      <link rel="stylesheet" type="text/css" href="css/styles.css">
      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Diplomata+SC">
      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
@@ -19,6 +25,8 @@
       <div class="candidates">{{{body}}}</div>
     </p> -->
 
+    <br><div class="candidates"></div>
+
     <div class="faces">
     <img src="http://i.imgur.com/3fPznJm.png" id="hillary">
     <img src="http://i.imgur.com/q51jBgb.png" id="bernie">
@@ -26,10 +34,6 @@
     <img src="http://i.imgur.com/EyfKSRt.png" id="marco">
     <img src="http://i.imgur.com/IHHWrFM.png" id="ted"></div>
     <div class="financials">
-      cash on hand
-      <p>total reciepts</p>
-      <p>more numbers</p>
-      <p>additional numbers</p>
     </div>
     <br><p><button type="button" class="button" id="button-1">visualization</button>
     <button type="button" class="button" id="button-2">visualization</button>
