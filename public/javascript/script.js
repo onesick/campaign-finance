@@ -1,12 +1,11 @@
 $(document).ready(function() {
 
-  // $(".money-number").function() {
-  //   Candidates.fetch().then(function(candidates){
-  //       console.log(candidates.total_receipts)
-  //       text.append("$" + candidate.total_receipts + "</p>")
-  //     }
-  //   )
-  // };
+  $(".money-number").append(function() {
+    Candidate.fetch().then(function(candidates){
+      console.log(candidates.total_receipts)
+      })
+    }
+  );
 
 
   $(function() {
