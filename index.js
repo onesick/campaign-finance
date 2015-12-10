@@ -21,6 +21,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 //setting a view handler
 app.set("view engine", "hbs");
 
+app.use(session({secret: 'wazzup'}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
