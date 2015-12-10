@@ -3,7 +3,8 @@ var passport = require('passport');
 var router = express.Router();
 var usersController = require('../controllers/usersController');
 var candidatesController = require('../controllers/candidatesController');
-
+var staticsController = require('../controllers/statics');
+var env=require("../env");
 
 router.route('/')
   .get(candidatesController.index);
@@ -25,4 +26,7 @@ router.route('/logout')
 router.route('/secret')
   .get(usersController.secret);
 
-module.exports = router;
+router.route('/data')
+  .get(staticsController.fetchData);
+
+module.exports=router;

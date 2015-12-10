@@ -1,3 +1,16 @@
+Testing environment:
+describe candidates
+	it should have name
+	it should have total net worth
+	it should have party
+	it should have donor informations
+
+describe user
+	it should have email
+	it should have password
+	it should have name
+
+
 Trello user story:
 https://trello.com/b/VvLGFT5m/campaign-finance
 
