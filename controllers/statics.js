@@ -1,5 +1,5 @@
 var request=require('request');
-var env=require('../env');
+var env=(process.env.api_key || require('../env'));
 var express = require("express");
 var app = express();
 

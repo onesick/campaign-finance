@@ -4,7 +4,7 @@ var router = express.Router();
 var usersController = require('../controllers/usersController');
 var candidatesController = require('../controllers/candidatesController');
 var staticsController = require('../controllers/statics');
-var env=require("../env");
+
 
 router.route('/')
   .get(candidatesController.index);

@@ -11,7 +11,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var mongoose = require("mongoose");
 var request=require('request');
-var env=require('./env');
+
 
 // mongoose.connect(process.env.MONGOLAB_URL ||'mongodb://localhost/local-authentication-with-passport');
 

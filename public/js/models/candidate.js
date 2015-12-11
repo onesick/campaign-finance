@@ -11,7 +11,7 @@ var Candidate = function(info){
 }
 
 Candidate.fetch = function(){
- var url="http://localhost:3000/data";
+ var url="./data";
   // saving the ajax request to a local variable
   var request = $.getJSON(url)
   // the promise function on a successful ajax call.
