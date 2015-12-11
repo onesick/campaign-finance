@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   Candidate.fetch().then(function(candidates){
     candidates.forEach(function(candidate){

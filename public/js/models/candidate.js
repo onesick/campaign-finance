@@ -4,6 +4,10 @@ var Candidate = function(info){
   this.total_spent=info.total_disbursements;
   this.cash_on_hand=info.cash_on_hand;
   this.contrib_less_200=info.contributions_less_than_200;
+  this.contrib_less_500=info.contributions_200_499;
+  this.contrib_less_1500=info.contributions_500_1499;
+  this.contrib_less_2700=info.contributions_1500_2699;
+  this.contrib_more_2700=info.contributions_2700;
 }
 
 Candidate.fetch = function(){

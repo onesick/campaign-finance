@@ -1,20 +1,14 @@
-var Candidate = require('../models/candidate');
 
-var candidatesController = {
 
-  index: function (req, res) {
-    res.render('candidates/index.hbs', {
-      candidates: Candidate.all()
-    });
-  },
+// GET /
+function index(req, res) {
+  res.render('./candidates/index');
+}
 
-  show: function (req, res) {
-    console.log(req.params);
-    res.render('candidates/show.hbs', {
-      candidate: req.params.id
-
-    });
-  }
+function show(req,res) {
+  res.render('./candidates/show');
+}
+module.exports = {
+  index: index,
+  show: show
 };
-
-module.exports = candidatesController;
