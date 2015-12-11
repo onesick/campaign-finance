@@ -13,7 +13,7 @@ var mongoose = require("mongoose");
 var request=require('request');
 var env=require('./env');
 
-mongoose.connect('mongodb://localhost/local-authentication-with-passport');
+// mongoose.connect(process.env.MONGOLAB_URL ||'mongodb://localhost/local-authentication-with-passport');
 
 var candidatesController = require("./controllers/candidatesController");
 var usersController = require("./controllers/usersController");
@@ -43,6 +43,6 @@ app.use(routes);
 
 
 //port listening at local hosting 3000
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log("app listening on port 3000");
 });
