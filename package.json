@@ -25,10 +25,16 @@
     "hbs": "^4.0.0",
     "mongoose": "^4.2.9",
     "passport": "^0.3.2",
+<<<<<<< HEAD
     "passport-local": "^1.0.0"
   },
   "devDependencies": {}
     
   }
 
+=======
+    "passport-facebook": "^2.0.0",
+    "request": "^2.67.0"
+  }
+>>>>>>> 1cfb43b9b0febd83bbacf10148dcfc5422ee7da8
 }

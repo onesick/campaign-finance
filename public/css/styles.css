@@ -1,0 +1,129 @@
+html{
+  background: url("http://previews.123rf.com/images/dgilder/dgilder1010/dgilder101001645/8052944-Stock-macro-photo-of-a-United-States-one-hundred-dollar-bill-featuring-Benjamin-Franklin-and-Indepen-Stock-Photo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Diplomata SC';
+  margin: 4%;
+  font-size: 20px;
+}
+
+h1{
+  color: white;
+  background-color: rgba(187,19,62,.8);
+  display: block;
+  vertical-align: bottom;
+  font-style: italic;
+  padding: 1% 4% 1% 1%;
+  text-align: right;
+  font-size: 6vw;
+  text-shadow: -.1em .1em black;
+}
+
+.candidates{
+  font-size: 10px;
+  color: white;
+  background-color: rgba(4, 30, 66, .5);
+  display: block;
+  vertical-align: bottom;
+  padding: .5%;
+  font-family: Oswald;
+}
+
+img{
+  width: 19%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.financials{
+  font-size: 0 20px 0 20px;
+  color: rgb(33,108,42);
+  background-color: rgba(222,184,135,.9);
+  display: block;
+  vertical-align: bottom;
+  font-family: Oswald;
+  border: black solid 10px;
+  padding: 0 30px 10px 30px;
+  font-size: 2vw;
+  margin-top: 5%;
+}
+
+.candidate-name{
+  color: white;
+  font-size: 2.4vw;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.money-title{
+  color: rgb(33,108,42);
+  font-family: Oswald;
+  font-size: 5vw;
+  font-weight: bold;
+  text-shadow: 0 .1em black;
+}
+
+.money-number{
+  font-size: 10vw;
+  text-align: center;
+  color: rgb(222,184,135);
+  font-family: "Montserrat";
+  background-color: black;
+  display: block;
+}
+
+.button{
+  color: red;
+  width: 29.4%;
+  padding: 2%;
+  font-size: 3vw;
+  color: white;
+  background-color: rgba(33,108,42,.7);
+  font-family: Oswald;
+  border: 10px solid rgb(222,184,135);;
+  box-shadow: 2px 2px 2px black;
+}
+
+#button-2{
+  margin: 0 5% 0 5%;
+}
+
+.animals{
+  width: 49%;
+  text-align: center;
+}
+
+#flag{
+  width: 100%;
+}
+
+#flag-2{
+  width: 100%;
+}
+
+@media (min-width: 800px){
+  h1{
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 700px){
+  img{
+    width: 31%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 950px){
+  img{
+    width: 23%;
+  }
+}
+
+
+.bar {
+    display: inline-block;
+    width: 100px;
+    height: 75px;   /* We'll override this later */
+}
