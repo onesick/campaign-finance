@@ -1,3 +1,6 @@
+// AM: Since you didn't end up implementing user authentication, I would put this in a separate branch.
+// AM: It's valuable code that you can continue working on later, but it since it serves no purpose in the application in it's current form, it's best stored somewhere other than the master branch.
+
 var LocalStrategy   = require('passport-local').Strategy;
  var User            = require('../models/user');
 
