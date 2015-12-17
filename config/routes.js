@@ -5,6 +5,7 @@ var usersController = require('../controllers/usersController');
 var candidatesController = require('../controllers/candidatesController');
 var staticsController = require('../controllers/statics');
 
+// AM: Good looking router!
 
 router.route('/')
   .get(candidatesController.index);

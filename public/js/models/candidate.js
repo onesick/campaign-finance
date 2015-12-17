@@ -1,3 +1,7 @@
+// AM: You make use of your model's fetch method in your application, but you don't actually use it to store and represent candidate data.
+// AM: A big refactoring step would be to make it so that ALL of your Javascript utilizes an OOJS approach.
+// AM: That means taking all the JS you run in `javascript/script.js` and moving that functionality into your model and view.
+
 var Candidate = function(info){
   this.name = info.name;
   this.total_receipts= info.total_receipts;
@@ -11,6 +15,7 @@ var Candidate = function(info){
 }
 
 Candidate.fetch = function(){
+  // AM: You don't need a `.` in the relative path for an AJAX call. In fact, this might break it.
  var url="./data";
   // saving the ajax request to a local variable
   var request = $.getJSON(url)

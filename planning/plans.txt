@@ -34,6 +34,10 @@ Donors
 
 User
 
+AM: While the below user stories are helpful on a higher level, the user stories we look for are those that reflect functionality based on user interaction.
+AM: They tend to follow the format "When a user ___(does something)___, the application should ___(do something)___."
+AM: Basically, what does the user see when they perform a certain action!
+
 User Stories
 Bronze - As a logged-in user, I want to be able to add candidates as they enter the race.
 B- As a logged-in user, I want to be able to edit candidates as their status changes.

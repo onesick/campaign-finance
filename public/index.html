@@ -6,11 +6,18 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Diplomata+SC">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+
+  <!-- AM: You have a lot of JS and HTML files in this application, a bunch of which you don't use. -->
+  <!-- AM: I would spend some time getting rid of unused files. Will make your application a lot easier to navigate for yourself and other developers/employers. -->
+
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <meta charset="utf-8">
   <script src="javascript/d3.v3.js"></script>
   <script src="javascript/d3.js"></script>
   <script src="javascript/script.js"></script>
+
+  <!-- AM: You're linking to a jQuery script twice in <head>. -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/models/candidate.js"></script>
   <!-- <script src="js/views/candidateView.js"></script>
@@ -23,6 +30,8 @@
 <div class="financials">
 </div>
 
+<!-- AM: This would be part of your OOJS refactoring, but think about how you could render your candidates using a view instead of hard-coding. -->
+<!-- AM: This would require making photoUrl a property of your back-end model. -->
 <div class="faces">
   <img src="http://i.imgur.com/3fPznJm.png" id="Hillary Clinton">
     <img src="http://i.imgur.com/ZIFXVMh.png" id="Donald J. Trump">

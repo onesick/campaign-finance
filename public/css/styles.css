@@ -37,6 +37,8 @@ img{
   text-align: center;
 }
 
+/* AM: Noticing a lot of variation between the units you use here (e.g., px AND % AND vs). */
+/* AM: Nothing wrong with switching things up and here and there, but doing it a lot will make it difficult for others or future you to make CSS changes down the road. */
 .financials{
   font-size: 0 20px 0 20px;
   color: rgb(33,108,42);
@@ -102,6 +104,8 @@ img{
 #flag-2{
   width: 100%;
 }
+
+/* AM: +1 RWD */
 
 @media (min-width: 800px){
   h1{
